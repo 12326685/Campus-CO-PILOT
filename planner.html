@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weekly Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🗓️ Time Travel Planner</h1>
+    <p>Drag and drop your classes and tasks into each day!</p>
+  </header>
+  <div class="planner">
+    <div class="tasks">
+      <div id="task1" draggable="true" ondragstart="drag(event)">📘 Math Class</div>
+      <div id="task2" draggable="true" ondragstart="drag(event)">💻 Coding Lab</div>
+      <div id="task3" draggable="true" ondragstart="drag(event)">📝 Assignment</div>
+    </div>
+    <div class="week">
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Mon</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Tue</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Wed</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Thu</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Fri</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Sat</div>
+      <div class="day" ondrop="drop(event)" ondragover="allowDrop(event)">Sun</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

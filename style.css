@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fceaff, #e0f7ff);
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
+
+.header, .welcome {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: #ff87a2;
+}
+
+.subtext, .header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+button {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  background: #ffcce1;
+  color: #333;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ffb3c6;
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 180px;
+  margin: 1rem auto;
+  display: block;
+  animation: float 4s ease-in-out infinite;
+}
+
+.avatar-small {
+  width: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff9fc;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(255, 182, 193, 0.2);
+  padding: 1.5rem;
+  width: 280px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 192, 203, 0.4);
+}
+
+.card h2 {
+  color: #f06292;
+  margin-bottom: 0.8rem;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.progress-bar {
+  height: 14px;
+  background: #ffe0ed;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.progress {
+  height: 14px;
+  background: #f06292;
+  border-radius: 8px;
+}
+
+.planner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tasks div {
+  padding: 0.5rem 1rem;
+  background: #ffecf4;
+  border-radius: 12px;
+  margin: 0.5rem;
+  cursor: grab;
+}
+
+.week {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.day {
+  width: 120px;
+  height: 140px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: #f0faff;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  border: 2px dashed #cddfff;
+}
+.index-body {
+  background: linear-gradient(180deg, #ffeaf6, #e0f7ff);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.sky-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  width: 200px;
+  opacity: 0.4;
+  animation: floatClouds 60s linear infinite;
+}
+
+.cloud1 { top: 10%; left: 0%; animation-delay: 0s; }
+.cloud2 { top: 30%; left: 20%; animation-delay: 10s; }
+.cloud3 { top: 50%; left: 40%; animation-delay: 20s; }
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+@keyframes floatClouds {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+.welcome.fancy {
+  margin-top: 7vh;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  margin-top: -10px;
+  color: #777;
+}
+
+.zoom-in {
+  animation: zoomIn 2s ease forwards;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.5); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.speech-bubble {
+  background: #fff;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+  animation: float 3s ease-in-out infinite;
+}
+
+.btn-cute {
+  background: linear-gradient(to right, #ffd1dc, #fbc2eb);
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 0.8rem 1.6rem;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-cute:hover {
+  transform: scale(1.05);
+}
+
+.glow {
+  color: #ff87a2;
+  text-shadow: 0 0 10px #ffd1dc, 0 0 20px #ffb3c6;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

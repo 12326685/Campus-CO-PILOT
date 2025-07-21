@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Flight Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWa6-7uKNyDAJvpMGrb9g0wRWvEO2v1Vx6Q&s" class="avatar-small" />
+    <h1>🎮 Mission Control</h1>
+    <p>Complete daily college missions and earn XP!</p>
+  </header>
+  <section class="card-grid">
+    <div class="card">
+      <h2>🎓 Today’s Missions</h2>
+      <ul id="mission-list">
+        <li>🧠 Attend AI Class</li>
+        <li>📝 Submit Java Assignment</li>
+        <li>🎉 Go to Club Orientation</li>
+      </ul>
+      <button onclick="addTaskPrompt()">➕ Add New Mission</button>
+    </div>
+    <div class="card">
+      <h2>📊 Progress</h2>
+      <div class="progress-bar">
+        <div class="progress" style="width: 60%;"></div>
+      </div>
+      <p>You’ve earned 120 XP this week!</p>
+    </div>
+    <div class="card">
+      <h2>📣 Reminders</h2>
+      <ul>
+        <li>📌 Internship deadline - Fri</li>
+        <li>📌 Club Fest on Sat</li>
+        <li>📌 CS Lab on Mon</li>
+      </ul>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
